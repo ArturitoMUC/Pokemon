@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./img/icon.webp">
+    <script src="script.js"></script>
+</head>
+
+<body onload="init()">
+
+    <header>
+        <img src="./img/PoKeDex.png" class="imagePokedex" onclick="resetOverview()">
+        <input id="pokemon-input" class="pokemon-input" type="text" placeholder="Finde deinen Pokemon"
+            onchange="searchPokemon()">
+    </header>
+
+    <div id="overviewContainer" class="overviewContainer"></div>
+
+    <div class="loader"></div>
+
+    <div id="card" class="card hideCard">
+        <div id="cardInside" class="cardInside hideCardInside">
+            <div id="pokedex" class="pokedex"></div>
+        </div>
+    </div>
+    <div id="show-more"></div>
+
+    <div class="buttonCont"><button id="button" class="button" role="button" onclick="showMore()">Zeige weitere
+            Pokemons</button></div>
+</body>
+
+</html>
